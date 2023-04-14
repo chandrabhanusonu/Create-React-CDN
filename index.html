@@ -10,20 +10,26 @@
     <div id="root"></div>
   </body>
 
-  <script
+  <!-- <script
     crossorigin
     src="https://unpkg.com/react@18/umd/react.development.js"
   ></script>
   <script
     crossorigin
     src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
-  ></script>
+  ></script> -->
 
   <script>
-    const heading = React.createElement("h1", {}, "Namaste Everyone!");
+    // const heading = React.createElement("h1", {}, "Namaste Everyone!");
 
-    const root = ReactDOM.createRoot(document.getElementById("root"));
+    // const root = ReactDOM.createRoot(document.getElementById("root"));
 
-    root.render(heading);
+    // root.render(heading);
+
+    const heading = document.createElement("h1");
+
+    heading.innerHTML = "Welcome to JavaScript";
+
+    document.getElementById("root").appendChild(heading);
   </script>
 </html>
