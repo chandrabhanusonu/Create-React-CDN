@@ -7,29 +7,39 @@
     <title>Namasta React</title>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <!-- Not view in Reander -->
+      <h1 id="title">Hello World</h1>
+      <h1 id="title">Hello World</h1>
+      <h1 id="title">Hello World</h1>
+      <h1 id="title">Hello World</h1>
+      <h1 id="title">Hello World</h1>
+      <h1 id="title">Hello World</h1>
+      <h1 id="title">Hello World</h1>
+      <h1 id="title">Hello World</h1>
+    </div>
   </body>
 
-  <!-- <script
+  <script
     crossorigin
     src="https://unpkg.com/react@18/umd/react.development.js"
   ></script>
   <script
     crossorigin
     src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
-  ></script> -->
+  ></script>
 
   <script>
-    // const heading = React.createElement("h1", {}, "Namaste Everyone!");
+    const heading = React.createElement(
+      "h1",
+      {
+        id: "title",
+      },
+      "Namaste Everyone!"
+    );
 
-    // const root = ReactDOM.createRoot(document.getElementById("root"));
+    const root = ReactDOM.createRoot(document.getElementById("root"));
 
-    // root.render(heading);
-
-    const heading = document.createElement("h1");
-
-    heading.innerHTML = "Welcome to JavaScript";
-
-    document.getElementById("root").appendChild(heading);
+    root.render(heading);
   </script>
 </html>
